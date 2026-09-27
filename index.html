@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tecnologia com Cuidado</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="headerbar">
+    <a class="brand" href="#topo">Tecnologia com Cuidado</a>
+    <nav aria-label="Navegação principal">
+      <a href="#alertas">Alertas</a>
+      <a href="#artigos">Artigos</a>
+      <a href="#jogos">Mini-jogos</a>
+      <a href="#divulgacoes">Avisos</a>
+      <a href="#ajuda">Ajuda</a>
+    </nav>
+  </div>
+  <div class="a11y-bar">
+    <div class="a11y-inner">
+      <span>Tamanho do texto:</span>
+      <button id="menorTexto" aria-label="Diminuir tamanho do texto">A−</button>
+      <button id="normalTexto" aria-label="Tamanho normal do texto">A</button>
+      <button id="maiorTexto" aria-label="Aumentar tamanho do texto">A+</button>
+      <button id="contrasteBtn" aria-pressed="false">Alto contraste</button>
+    </div>
+  </div>
+</header>
+
+<main id="topo">
+  <div class="wrap">
+
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <h1>Este espaço é para você</h1>
+          <p>Aqui você aprende, com calma e sem pressa, como usar o celular e a internet com mais segurança.</p>
+          <p><strong>Regra de ouro:</strong> se algo parecer estranho, pare. Ligue para alguém de confiança antes de fazer qualquer coisa.</p>
+        </div>
+        <div class="img-zoom hero-img" aria-hidden="true">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="95" fill="#F1E4C6"/>
+            <circle cx="100" cy="78" r="30" fill="#C68A2E"/>
+            <path d="M55 165c5-35 25-52 45-52s40 17 45 52" fill="#1C3A4B"/>
+            <rect x="120" y="95" width="34" height="52" rx="8" fill="#1C3A4B"/>
+            <rect x="126" y="102" width="22" height="34" rx="2" fill="#FBF6EC"/>
+            <circle cx="137" cy="141" r="2.5" fill="#FBF6EC"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="alertas">
+      <h2>Fique de olho nestes golpes</h2>
+      <p>Pessoas más usam a tecnologia para enganar. Veja os três golpes mais comuns hoje em dia.</p>
+
+      <div class="card alert">
+        <div class="card-row">
+          <div class="img-zoom icon-box">
+            <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#F4DED6"/>
+              <path d="M35 30c-4 4-6 10-3 18 5 13 20 28 33 33 8 3 14 1 18-3l4-4c2-2 2-5 0-7l-9-9c-2-2-5-2-7 0l-3 3c-6-3-13-10-16-16l3-3c2-2 2-5 0-7l-9-9c-2-2-5-2-7 0z" fill="#A63D2A"/>
+            </svg>
+          </div>
+          <div>
+            <span class="tag">Golpe da voz clonada</span>
+            <h3>Uma voz igual à do seu neto — mas não é ele</h3>
+            <p>Programas de computador conseguem copiar a voz de uma pessoa usando poucos segundos de um áudio da internet.</p>
+            <details>
+              <summary>O que acontece e o que fazer</summary>
+              <ul>
+                <li>O golpista liga chorando, dizendo que sofreu um acidente ou está preso.</li>
+                <li>Ele pede dinheiro rápido, geralmente por Pix.</li>
+                <li>A voz pode soar exatamente como a de um parente seu.</li>
+              </ul>
+              <p><strong>Faça isto:</strong> desligue a ligação. Depois, ligue você mesmo para aquele parente, usando o número já salvo na sua agenda.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <div class="card alert">
+        <div class="card-row">
+          <div class="img-zoom icon-box">
+            <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#F4DED6"/>
+              <path d="M25 35a8 8 0 018-8h34a8 8 0 018 8v22a8 8 0 01-8 8H45l-12 10v-10h-2a8 8 0 01-8-8z" fill="#A63D2A"/>
+              <circle cx="40" cy="46" r="3" fill="#F4DED6"/><circle cx="50" cy="46" r="3" fill="#F4DED6"/><circle cx="60" cy="46" r="3" fill="#F4DED6"/>
+            </svg>
+          </div>
+          <div>
+            <span class="tag">Golpe por mensagem</span>
+            <h3>Mensagem do "banco" pelo WhatsApp</h3>
+            <p>Chegam mensagens pedindo sua senha ou dinheiro, fingindo ser o banco ou um parente com "número novo".</p>
+            <details>
+              <summary>O que acontece e o que fazer</summary>
+              <ul>
+                <li>Bancos nunca pedem sua senha inteira por mensagem.</li>
+                <li>Um parente de verdade avisa por telefone se trocar de número.</li>
+              </ul>
+              <p><strong>Faça isto:</strong> não responda. Ligue para o número antigo da pessoa, ou vá até uma agência para confirmar.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <div class="card alert">
+        <div class="card-row">
+          <div class="img-zoom icon-box">
+            <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#F4DED6"/>
+              <rect x="24" y="34" width="40" height="30" rx="5" fill="#A63D2A"/>
+              <path d="M64 44l14-8v28l-14-8z" fill="#A63D2A"/>
+              <circle cx="44" cy="49" r="6" fill="#F4DED6"/>
+            </svg>
+          </div>
+          <div>
+            <span class="tag">Vídeo falso</span>
+            <h3>Vídeos que parecem reais, mas são falsos</h3>
+            <p>Existem vídeos feitos por computador onde uma pessoa parece estar dizendo algo que nunca disse.</p>
+            <details>
+              <summary>O que acontece e o que fazer</summary>
+              <ul>
+                <li>Usados para vender remédios milagrosos ou pedir doações falsas.</li>
+                <li>Podem usar o rosto de médicos ou pessoas famosas.</li>
+              </ul>
+              <p><strong>Faça isto:</strong> desconfie de promessas rápidas demais. Pergunte a um familiar antes de acreditar ou compartilhar.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="artigos">
+      <h2>Artigos para ler com calma</h2>
+
+      <div class="card safe">
+        <h3>O que é inteligência artificial?</h3>
+        <p>É um programa de computador treinado para imitar coisas que pessoas fazem, como falar ou escrever.</p>
+        <details>
+          <summary>Ler mais</summary>
+          <p>Pense nela como um aluno muito rápido. Ela olhou milhões de vozes e fotos, e aprendeu a copiar. Isso ajuda em coisas boas, mas também deixa golpistas criarem vozes e vídeos falsos. Só de saber que isso existe, você já fica mais protegido.</p>
+        </details>
+      </div>
+
+      <div class="card safe">
+        <h3>5 sinais de golpe</h3>
+        <p>Aprenda a notar quando algo não está certo.</p>
+        <details>
+          <summary>Ler mais</summary>
+          <ul>
+            <li>Pede pressa: "responda agora ou vai perder algo".</li>
+            <li>Pede dinheiro ou senha por Pix ou mensagem.</li>
+            <li>Vem de um número desconhecido.</li>
+            <li>Tem erros estranhos de escrita.</li>
+            <li>Pede segredo, para não contar à família.</li>
+          </ul>
+          <p>Se dois desses sinais aparecerem juntos, desconfie.</p>
+        </details>
+      </div>
+
+      <div class="card safe">
+        <h3>Como confirmar antes de agir</h3>
+        <p>Um minuto de confirmação pode evitar um prejuízo grande.</p>
+        <details>
+          <summary>Ler mais</summary>
+          <p>Recebeu algo estranho? Não responda ali mesmo. Desligue e ligue de volta usando um número que já está salvo na sua agenda. Golpistas contam com a pressa das pessoas — parar um minuto quase sempre resolve.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="jogos">
+      <h2>Mini-jogos</h2>
+      <p>Jogue um pouco e treine a memória. São simples e rápidos.</p>
+
+      <div class="card game-card">
+        <div class="card-row">
+          <div class="img-zoom icon-box">
+            <svg viewBox="0 0 100 100"><rect x="6" y="6" width="88" height="88" rx="10" fill="#DDEAE0"/>
+              <line x1="36" y1="14" x2="36" y2="86" stroke="#3F6B4A" stroke-width="4"/>
+              <line x1="64" y1="14" x2="64" y2="86" stroke="#3F6B4A" stroke-width="4"/>
+              <line x1="14" y1="36" x2="86" y2="36" stroke="#3F6B4A" stroke-width="4"/>
+              <line x1="14" y1="64" x2="86" y2="64" stroke="#3F6B4A" stroke-width="4"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Jogo da velha</h3>
+            <p>Você joga com X. O computador joga com O. Toque em um quadrado vazio para jogar.</p>
+          </div>
+        </div>
+        <div id="velhaTabuleiro" class="velha-grid" role="grid" aria-label="Tabuleiro do jogo da velha"></div>
+        <p id="velhaMensagem" class="game-msg" aria-live="polite">Sua vez! Toque em um quadrado.</p>
+        <button id="velhaReiniciar" class="btn-secundario">Jogar de novo</button>
+      </div>
+
+      <div class="card game-card">
+        <div class="card-row">
+          <div class="img-zoom icon-box">
+            <svg viewBox="0 0 100 100"><rect x="10" y="20" width="35" height="45" rx="6" fill="#C68A2E"/>
+              <rect x="55" y="20" width="35" height="45" rx="6" fill="#1C3A4B"/>
+            </svg>
+          </div>
+          <div>
+            <h3>Jogo da memória</h3>
+            <p>Encontre os pares iguais. Toque em duas cartas para virá-las.</p>
+          </div>
+        </div>
+        <div id="memoriaTabuleiro" class="memoria-grid" role="grid" aria-label="Tabuleiro do jogo da memória"></div>
+        <p id="memoriaMensagem" class="game-msg" aria-live="polite">Toque em uma carta para começar.</p>
+        <button id="memoriaReiniciar" class="btn-secundario">Jogar de novo</button>
+      </div>
+
+      <div class="card game-card">
+        <div class="card-row">
+          <div class="img-zoom icon-box">
+            <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="48" fill="#E8DCC4"/>
+              <text x="50" y="66" font-size="55" text-anchor="middle" fill="#C68A2E" font-family="Georgia,serif">?</text>
+            </svg>
+          </div>
+          <div>
+            <h3>Quiz: o que você aprendeu?</h3>
+            <p>Cinco perguntas simples sobre o que vimos neste blog. Não tem nota ruim, é só para praticar.</p>
+          </div>
+        </div>
+        <div id="quizArea"></div>
+      </div>
+    </section>
+
+    <section id="divulgacoes">
+      <h2>Avisos</h2>
+      <p>Atividades do Asilo de Vitória e de parceiros.</p>
+
+      <div class="card">
+        <span class="tag">Presencial</span>
+        <h3>Oficina gratuita: usando o celular com segurança</h3>
+        <p>Encontro para tirar dúvidas sobre WhatsApp e golpes. Vagas limitadas — procure a recepção para se inscrever.</p>
+      </div>
+
+      <div class="card">
+        <span class="tag">Roda de conversa</span>
+        <h3>"Isso é golpe ou é verdade?"</h3>
+        <p>Um encontro em grupo para aprender juntos a reconhecer mensagens suspeitas.</p>
+      </div>
+    </section>
+
+    <section id="ajuda" class="help-box">
+      <h2>Precisa de ajuda agora?</h2>
+      <p>Recebeu uma mensagem ou ligação estranha? Não decida sozinho.</p>
+      <p>Recepção do Asilo de Vitória: segunda a sexta, das 8h às 17h.</p>
+      <a class="callbtn" href="(27) 3323-6138">Ligar para a recepção</a>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Projeto de extensão "Tecnologia com Propósito", em parceria com o Asilo de Vitória.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
